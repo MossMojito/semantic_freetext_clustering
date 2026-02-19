@@ -1,11 +1,6 @@
-# 🧭 Business-Steered NLP Clustering: Bridging AI and Business Rules
+# Sentence Similarity: Semi-Supervise Free-text grouping
 
-An enterprise-grade, semi-supervised NLP architecture designed to categorize and route messy, unstructured customer free-text (with full Thai language support) when no labeled training data is available.
-
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991)
-![Scikit-Learn](https://img.shields.io/badge/Machine_Learning-UMAP_%7C_HDBSCAN-F7931E)
+An enterprise-grade, semi-supervised architecture designed to categorize and route messy, unstructured customer free-text (with full Thai language support) when no labeled training data is available.
 
 ## 🚨 The Real-World Problem
 
