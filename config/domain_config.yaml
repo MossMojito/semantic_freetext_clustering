@@ -1,0 +1,33 @@
+# domain_config.yaml
+
+# Layer 1: The core Intents for the LLM
+target_intents:
+  - complain
+  - service issue
+  - information
+  - promotion
+  - register
+  - account
+
+# Layer 2: The Business Anchors mapping for HDBSCAN Fallback
+anchors_config:
+  "Delivery & Logistics":
+    - Delivery
+    - Shipping
+    - Rider
+  "Payment & Billing":
+    - Payment
+    - Refund
+    - Billing
+  "Product Quality":
+    - Product
+    - Return
+    - Damage
+  "App & Tech Support":
+    - App
+    - Bug
+    - Account
+  "Customer Service":
+    - Staff
+    - Contact
+    - Branch

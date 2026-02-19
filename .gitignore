@@ -1,0 +1,11 @@
+# Ignore sensitive data and large models
+data/
+models/
+
+# Ignore Python environments and cache files
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+.ipynb_checkpoints/
