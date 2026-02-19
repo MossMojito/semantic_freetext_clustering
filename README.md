@@ -9,11 +9,8 @@ When dealing with thousands of daily customer inquiries, businesses need to rout
 1. **The Supervised Trap (The "Cold Start"):** We don't have thousands of manually labeled historical tickets to train a classification model.
 2. **The Unsupervised Trap (The "Math vs. Business" Clash):** If we just use pure unsupervised clustering (like K-Means or basic HDBSCAN), the AI groups text based on mathematical similarity, not business logic. It might cluster all "angry sounding" complaints together, completely ignoring that one is a Delivery issue and another is a Payment bug.
 
-## 💡 The Solution: Business-Steered Clustering
+## 💡 The Solution: Semi-Supervise Architecture
 
-This architecture solves the dilemma by decoupling the NLP pipeline into two distinct layers. It uses unsupervised algorithms to find the natural shape of the data, but applies "Centroid Steering" via a YAML configuration file to forcefully pull those clusters into predefined Business Departments.
-
-### The Architecture
 * **Layer 1: Broad Intent Classification (LLM)**
   * Uses a zero-shot LLM (GPT-4o-mini) to instantly classify the broad intent (e.g., `complain`, `information`, `service issue`).
 * **Layer 2: Granular Topic Clustering (Local NLP Math)**
